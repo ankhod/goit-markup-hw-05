@@ -45,14 +45,11 @@
       </div>
     </header>
     <main>
-      <section>
-        <button class="hero-btn" type="button" data-modal-open>Order Service</button>
-      </section>
       <!-- Hero Section -->
       <section class="hero-section">
         <div class="container hero-section-container">
           <h1 class="main-title">Effective Solutions for Your Business</h1>
-          <button class="order-service-btn" type="button">Order Service</button>
+          <button class="order-service-btn" type="button" data-modal-open>Order Service</button>
         </div>
       </section>
       <!-- What Section -->
@@ -432,12 +429,26 @@
         </div>
       </div>
     </footer>
-    <div class="backdrop" data-modal>
+    <div class="backdrop is-open">
       <div class="modal">
-        <button class="modal-close-btn" type="button" data-modal-close>close</button>
+        <button class="modal-close-btn" type="button" data-modal-close>
+          <svg class="form-icons" height="8" width="8">
+            <use href="./images/icons.svg#icon-close-black.svg"></use>
+          </svg>
+        </button>
+        <p class="modal-tytle">Leave your contacts and we will call you back</p>
+        <form class="modal-field">
+          <div class="modal-input-field">
+            <label class="modal-input-label" for="user-name">Name</label>
+            <div class="modal-input-info">
+              <input class="modal-input" type="text" name="user-name" id="user-name" required />
+              <svg class="form-icons" height="24" width="18">
+                <use href="./images/icons.svg#icon-person-black.svg"></use>
+              </svg>
+            </div>
+          </div>
+        </form>
       </div>
     </div>
-
-    <script src="./js/modal.js"></script>
   </body>
 </html>
