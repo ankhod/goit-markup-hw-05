@@ -385,7 +385,9 @@
         </div>
       </section>
     </main>
+
     <!-- Footer -->
+
     <footer class="page-footer">
       <div class="container container-footer">
         <div class="page-footer-block-left">
@@ -427,9 +429,25 @@
             </li>
           </ul>
         </div>
+        <div class="footer-subscribe">
+          <p class="footer-subscribe-text">Subscribe</p>
+          <form class="footer-subscribe-form">
+            <label class="footer-subscribe-label" for="user-subscribe-email">
+              <input class="footer-subscribe-input" type="email" id="user-subscribe-email" placeholder="E-mail" />
+            </label>
+            <button class="footer-subscribe-button" type="submit">
+              Subscribe<svg class="subscribe-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-icon-send.svg"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
       </div>
     </footer>
-    <div class="backdrop is-open">
+
+    <!-- Modal -->
+
+    <div class="backdrop">
       <div class="modal">
         <button class="modal-close-btn" type="button" data-modal-close>
           <svg class="form-icons-close" height="8" width="8">

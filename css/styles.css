@@ -544,6 +544,76 @@ body {
   fill: #f4f4fd;
 }
 
+.footer-subscribe {
+  margin-left: auto;
+}
+
+.footer-subscribe-form {
+  display: flex;
+  gap: 24px;
+}
+
+.footer-subscribe {
+  font: 500 16px / 1.5 'Roboto', sans-serif;
+  letter-spacing: 0.02em;
+  color: #fff;
+  margin-bottom: 16px;
+}
+
+.footer-subscribe-input {
+  width: 264px;
+  height: 40px;
+  border: 1px solid #fff;
+  border-radius: 4px;
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: 0.04em;
+  color: #fff;
+  background-color: transparent;
+  padding-left: 16px;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-subscribe-input::placeholder {
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: 0.04em;
+  color: #fff;
+}
+.footer-subscribe-input:focus {
+  outline: none;
+  border-color: #31d0aa;
+}
+
+.footer-subscribe-button {
+  display: flex;
+  gap: 16px;
+  border-radius: 4px;
+  padding: 8px 24px;
+  width: 165px;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #fff;
+  cursor: pointer;
+  border: none;
+  background: #4d5ae5;
+}
+
+.subscribe-icon {
+  fill: #f4f4fd;
+}
+
+.footer-subscribe-button:hover,
+.footer-subscribe-button:focus {
+  background-color: #404bbf;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 /* ================ /FOOTER STYLES ================ */
 /* ================ /MODAL ================ */
 
@@ -713,10 +783,26 @@ body {
   margin-bottom: 24px;
 }
 
+.acception:checked {
+  width: 16px;
+  height: 16px;
+  border-radius: 2px;
+  fill: #404bbf;
+  border: 1px solid #404bbf;
+}
+
+.acception-icon {
+  fill: #f4f4fd;
+}
+
 .acception:checked + .acception-part-label > .acception-span {
   background-color: #484bbf;
   border: none;
   fill: #f4f4fd;
+}
+
+.acception:focus + .acception-part-label > .acception-span {
+  border-color: #404bbf;
 }
 
 .acception-span {
