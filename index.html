@@ -433,7 +433,13 @@
           <p class="footer-subscribe-text">Subscribe</p>
           <form class="footer-subscribe-form">
             <label class="footer-subscribe-label" for="user-subscribe-email">
-              <input class="footer-subscribe-input" type="email" id="user-subscribe-email" placeholder="E-mail" />
+              <input
+                class="footer-subscribe-input"
+                type="email"
+                name="email"
+                id="user-subscribe-email"
+                placeholder="E-mail"
+              />
             </label>
             <button class="footer-subscribe-button" type="submit">
               Subscribe<svg class="subscribe-icon" width="24" height="24">
@@ -447,7 +453,7 @@
 
     <!-- Modal -->
 
-    <div class="backdrop">
+    <div class="backdrop is-open">
       <div class="modal">
         <button class="modal-close-btn" type="button" data-modal-close>
           <svg class="form-icons-close" height="8" width="8">
