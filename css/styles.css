@@ -840,7 +840,7 @@ body {
 }
 
 .acception-span {
-  display: flex;
+  display: inline-flex;
   justify-content: center;
   align-items: center;
   width: 16px;
@@ -854,7 +854,6 @@ body {
 }
 
 .acception-part-label {
-  display: flex;
   margin-top: 16px;
   justify-content: center;
   font: 400 12px / 1.17 'Roboto', sans-serif;
