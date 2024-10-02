@@ -489,30 +489,36 @@
               </svg>
             </div>
           </div>
-          <div class="modal-input-field">
+          <div class="modal-input-field-textarea">
             <label class="modal-input-label" for="user-comment">Comment</label>
-            <div class="modal-input-info">
-              <textarea
-                class="modal-input-textarea"
-                id="user-comment"
-                name="user-comment"
-                placeholder="Text input"
-              ></textarea>
-            </div>
+            <!-- <div class="modal-input-info"> -->
+            <textarea
+              class="modal-input-textarea"
+              id="user-comment"
+              name="user-comment"
+              placeholder="Text input"
+            ></textarea>
           </div>
+
+          <div class="acception-part">
+            <input
+              class="acception visually-hidden"
+              type="checkbox"
+              name="user-privacy"
+              id="user-privacy"
+              value="true"
+            />
+            <label class="acception-part-label" for="user-privacy">
+              <span class="acception-span">
+                <svg class="acception-icon" width="10" height="8">
+                  <use href="./images/icons.svg#icon-vector.svg"></use>
+                </svg>
+              </span>
+              "I accept the terms and conditions of the"<a class="privaci-link" href="">Privacy Policy</a>
+            </label>
+          </div>
+          <button class="modal-btn" type="submit">Send</button>
         </form>
-        <div class="acception-part">
-          <input class="acception visually-hidden" type="checkbox" name="user-privacy" id="user-privacy" value="true" />
-          <label class="acception-part-label" for="user-privacy">
-            <span class="acception-span">
-              <svg class="acception-icon" width="10" height="8">
-                <use href="./images/icons.svg#icon-vector.svg"></use>
-              </svg>
-            </span>
-            "I accept the terms and conditions of the"<a class="privaci-link" href="">Privacy Policy</a>
-          </label>
-        </div>
-        <button class="modal-btn" type="submit">Send</button>
       </div>
     </div>
   </body>

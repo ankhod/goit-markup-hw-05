@@ -648,6 +648,7 @@ body {
   left: 50%;
   width: 408px;
   min-height: 584px;
+  padding: 72px 24px 24px 24px;
   border-radius: 4px;
   transform: translate(-50%, -50%);
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 2px 1px 0 rgba(0, 0, 0, 0.2);
@@ -668,6 +669,7 @@ body {
   align-items: center;
   justify-content: center;
   background-color: #e7e9fc;
+  fill: #2e2f42;
   border: 1px solid rgba(0, 0, 0, 0.1);
   padding: 0;
   stroke-width: 1px;
@@ -676,31 +678,31 @@ body {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.form-icons-close {
+/*.form-icons-close {
   fill: #2e2f42;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+}*/
 
 .modal-close-btn:hover,
 .modal-close-btn:focus {
   border: none;
   background-color: #404bbf;
-  fill: #fff;
+  fill: #ffffff;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.form-icons-close:hover,
+/*.form-icons-close:hover,
 .form-icons-close:focus {
   fill: #fff;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+}*/
 
 .modal-tytle {
   font: 500 16px / 1.5 'Roboto', sans-serif;
   letter-spacing: 0.02em;
   text-align: center;
   color: #2e2f42;
-  margin-top: 72px;
+  margin-bottom: 16px;
 }
 
 .modal-form {
@@ -711,19 +713,24 @@ body {
   gap: 8px;
   border-radius: 4px;
   width: 360px;
-  height: 336px;
+
   margin: 16px auto;
 }
+
+/* height: 336px; */
 
 .modal-input-field {
   width: 360px;
   height: 58px;
+  margin-bottom: 8px;
 }
 
 .modal-input-label {
-  font: 400 12px / 1.16667 'Roboto', sans-serif;
+  display: block;
+  font: 400 12px / 1.17 'Roboto', sans-serif;
   letter-spacing: 0.04em;
   color: #8e8f99;
+  margin-bottom: 4px;
 }
 
 .modal-input-info {
@@ -737,6 +744,9 @@ body {
   width: 360px;
   height: 40px;
   padding-left: 38px;
+  background-color: transparent;
+  outline: transparent;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-input:hover,
@@ -750,34 +760,42 @@ body {
   left: 16px;
   top: 50%;
   transform: translateY(-50%);
-  pointer-events: none;
+
   fill: #2e2f42;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .form-icons-input:hover,
 .form-icons-input:focus {
-  stroke: #4d5ae5;
-  transition: stroke 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  fill: #4d5ae5;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-input-field-textare {
+  margin-bottom: 16px;
 }
 
 .modal-input-textarea {
+  width: 100%;
+  font-size: 12px;
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
+  background-color: transparent;
+  padding: 8px 16px;
+  outline: transparent;
   width: 360px;
   height: 120px;
-  font: 400 12px / 1.16667 'Roboto', sans-serif;
+  font: 400 12px / 1.17 'Roboto', sans-serif;
   letter-spacing: 0.04em;
   color: rgba(46, 47, 66, 0.4);
-  padding-left: 16px;
-  padding-top: 8px;
   resize: none;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-input-textarea:hover,
 .modal-input-textarea:focus {
-  border: 1px solid #4d5ae5;
-  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  border-color: #4d5ae5;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .visually-hidden {
@@ -830,6 +848,7 @@ body {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1),
     fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   margin-right: 8px;
+  fill: transparent;
 }
 
 .acception-part-label {
@@ -841,10 +860,17 @@ body {
   color: #8e8f99;
 }
 
+.privaci-link {
+  color: #4d5ae5;
+  text-decoration: underline;
+}
+
 .modal-btn {
   display: block;
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: 24px;
-  margin-left: 119px;
+  margin-left: 95.5px;
   border-radius: 4px;
   padding: 16px 32px;
   width: 169px;
@@ -853,11 +879,17 @@ body {
   letter-spacing: 0.04em;
   text-align: center;
   color: #fff;
+  cursor: pointer;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
   background-color: #4d5ae5;
-  transform: translate X(50%);
+
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+/* transform: translateX(50%);
+margin-bottom: 24px;
+  margin-left: 119px;
+ */
 
 .modal-btn:hover,
 .modal-btn:focus {
