@@ -815,7 +815,6 @@ body {
 
 .acception-part {
   margin-bottom: 24px;
-  display: inline-flex;
 }
 
 .acception:checked {
@@ -841,7 +840,7 @@ body {
 }
 
 .acception-span {
-  display: inline-flex;
+  display: flex;
   justify-content: center;
   align-items: center;
   width: 16px;
@@ -855,8 +854,8 @@ body {
 }
 
 .acception-part-label {
-  margin-top: 16px;
   display: flex;
+  margin-top: 16px;
   justify-content: center;
   font: 400 12px / 1.17 'Roboto', sans-serif;
   letter-spacing: 0.04em;
